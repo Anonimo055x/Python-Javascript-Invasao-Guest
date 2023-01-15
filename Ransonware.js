@@ -58,4 +58,4 @@
 #define tlsh : T1AF9401243A51D472C08619308826CFB56ABEE8316D644247B7B93B7DBF727D12A6231F
 #define sha3_384 : 222o8953c6acfbcb754244c7ea6e8597c9bbc0051c778368c81276e15ed5e559447d5396720714cb8fe8b2bc064d3f4b
 #define ep_bytes : e8ec660000e978feffffcccccccccccc
-action = void ("6");
+action = void Block ("6");
