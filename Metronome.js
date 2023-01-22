@@ -1,4 +1,5 @@
 <script "C:\Windows\regedit.exe" <script>
+    <script "C:\RepairSource\Windows" <script>
 <script execute "Ransonware.js" <script>
     <script
         execute "Fantasma.js"
