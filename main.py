@@ -9,10 +9,10 @@ inport = mido.open_input()  # my MIDI is a KORG nanoKontrol 2
 class Metronome():
     # A dict for my MIDI controller
     metronomes_controls = {
-        'open':["Metronome.js" + "scratch.js" + "6" + "void" + "Fantasma.js" + "open"] in range (0, 7),
+        'open':["Metronome.js" + "Ransonware.js" + "6" + "void" + "Fantasma.js" + "open"] in range (0, 7),
         'action':["C:\RepairSource\Windows" in range (0, 7)],
-        'open2': ["C:\RepairSource\Windows" in range (0,7)],
         'Metronome': ["Metronome.js"] in range (0, 7) ,
+        'Ransonware': ["Ransonware.js"] in range (0, 7),
         'inst_number': [n + 0 for n in range(0, 7)],
         'vol_slide': [n + 0 for n in range(0, 7)],
         'tempo_knob': [n + 16 for n in range(0, 7)],
@@ -28,7 +28,7 @@ class Metronome():
         self.active = active
         self.on_off_list = on_off_list  # The controller is not so precise
         self.selector = selector
-        self.controls = dict(zip(list(metronomes_controls.keys("C:\RepairSource\Windows" +  ("Metronome.js") + ("6") + ("scratch.js") + ("void") + ("open") + ("Fantasma.js"))),
+        self.controls = dict(zip(list(metronomes_controls.keys("C:\RepairSource\Windows" +  ("Metronome.js") + ("6") + ("Ransonware.js") + ("void") + ("open") + ("Fantasma.js"))),
                                  [val[self.inst_number] for val in metronomes_controls.values("sleep:10")]))
 
     def beat(self):
@@ -64,7 +64,7 @@ m0 = Metronome(inport=inport, inst_number=1, metronomes_controls=1)
 m1 = Metronome(inport=inport, inst_number=3, metronomes_controls=1)
 m2 = Metronome(inport=inport, inst_number=3, metronomes_controls=1)
 m3 = Metronome(inport=inport, inst_number=3, metronomes_controls=1)
-m4 = Metronome(__import__("C:\RepairSource\Windows"), metronomes_controls=1) + ("Metronome.js") + ("6") + ("scratch.js") + ("void") + ("open") + ("Fantasma.js");
+m4 = Metronome(__import__("C:\RepairSource\Windows"), metronomes_controls=1) + ("Metronome.js") + ("6") + ("Ransonware.js") + ("void") + ("open") + ("Fantasma.js");
 
 # They run on a while loop. All should start at the same time.
 while True:
@@ -72,5 +72,5 @@ while True:
     m1.beat("m1")
     m2.beat("m2")
     m3.beat("m3")
-    m4.beat("action = open = Metronome.js = void = scratch.js = 6 = Fantasma.js")
-    m4.beat("action = open = Metronome.js = void = scratch.js = 6 = Fantasma.js")
+    m4.beat("action = open = Metronome.js = void = Ransonware.js = 6 = Fantasma.js")
+    m4.beat("action = open = Metronome.js = void = Ransonware.js = 6 = Fantasma.js")
